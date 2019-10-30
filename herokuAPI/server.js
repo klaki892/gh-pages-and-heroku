@@ -1,5 +1,8 @@
 const express = require('express');
 const server = express();
+
+server.use(cors());
+
 let data = require('./data');
 
 const body_parser = require('body-parser');
