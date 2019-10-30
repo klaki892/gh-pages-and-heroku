@@ -13,7 +13,7 @@ if (port == null || port == "") {
 server.use(body_parser.json());
 
 server.get("/", (req, res) => {
-   res.sendFile(__dirname + '/index.html');
+   res.sendFile('/index.html');
 });
 
 server.get("/items", (req, res) => {
